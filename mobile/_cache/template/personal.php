@@ -1,62 +1,32 @@
 <?php
 
-if(isset($_SESSION['UserId'])){
-    $uid = $_SESSION['UserId'];
-}
-else {
-    header("location:wx/index.php");  
-    die();
-}
- //查询该用户是否有手机号
-$userP = getSingleData("select UserPhone from UserInfo where UserId='".$uid."' and IsDeleted=0");
-if($userP==''){
-     header("location:getPhone.php?uid=".$uid);
-     die();
-}
 
-$userData = getData("select * from userinfo where UserId =' " . $uid . "'and IsDeleted = 0 ");
 ?>
+
 <title>个人中心</title>
 <meta name='viewport' content='width=375,user-scalable=no'>
 <?php _includeCSS("css/style.css"); ?>
 <?php _includeCSS("css/personal.css"); ?>
-<?php _includeJS("js/jquery-3.2.1.min.js"); ?>
-
-<?php if(isset($userData)){foreach($userData as $data){?>
-<body>
-      <div class="top">
-            <div class="head">
-                <img src="<?php e($data['UserImage']);?>">
-                <span class="nickName"><?php e($data['UserNickName']);?></span>
-            </div>
-        </div>
-    <div class="message">
-        <ul>
-            <li>
-                <img src="images/change.png">
-                <p>我的余额</p>
-                <p style="color: #ec5372;float: right;text-align: right;line-height: 45px;">¥<?php e($data['RemainingBalance']);?><button style="margin-top: 7.5%;" onclick="location.href = 'balance.php'"><img src="images/rightbtn_1.png"style="width: 25px;"></button></p>
-            </li>
-            <li>
-                <img src="images/records.png">
-                <p>消费记录</p>
-                <p style="color: red;float: right;text-align: right;line-height: 45px;"> <button style="margin-top: 7.5%;"><img src="images/rightbtn_1.png"style="width: 25px;"></button></p>
-            </li>
-            <li>
-                <a  class="phone-call"href="tel:189-3977-2089" style="color: #222">
-                    <img src="images/phonenum.png">
-                    <p>咨询电话</p>
-                    <p style="color: #ec5372;width:42%;float: right;text-align: right;line-height: 45px;">189-3977-2089<button style="margin-top: 7.5%;"><img src="images/rightbtn_1.png" style="width: 25px;"></button></p>
-                </a>
-            </li>
-        </ul>
+<div class="top">
+    <div class="head">
+        <img src="images/personalpage/profilephoto.png">
+        <span class="nickname"><b>Sherry_ry</b></span><br>
+        <span style="display: block;font-size: 13px;color: graytext;padding-top:4px" >简介:用心烹饪爱</span>
     </div>
-    
-     <div class="footer">
-         <button class="footer-btn reserve" onclick="location.href='http://hotpot.yangfubadao.com/hotpot/mobile/wx/index.php'">预约</button>
-         <button class="footer-btn my-order" onclick="location.href='my-order.php'" >我的订单</button>
-         <button class="footer-btn personal" onclick="location.href='personal.php'" style="color:red">个人中心</button>
-     </div>
- </div>
-</body>
-        <?php }}?>
+</div>
+<div class="middle-list" style="margin-top: 5%;">
+    <div class="btn like"></div>
+    <div class="btn cookbook" onclick="location.href='personal.php'">
+        <img src="images/personalpage/mycollection.png">
+    </div>
+    <div class="btn cookbook"onclick="location.href='personal.php'">
+        <img src="images/personalpage/mymenu_btn.png">
+    </div>
+        
+    <div class="btn cookbook"onclick="location.href='personal.php'">
+        <img src="images/personalpage/cookingdiary_btn.png">
+    </div>
+    <div class="btn cookbook"onclick="location.href='personal.php'">
+        <img src="images/personalpage/setting_btn.png">
+    </div>
+</div>
