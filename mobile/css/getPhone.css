@@ -1,0 +1,83 @@
+i{
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    float: left;
+    left: 2px;
+    top: 6px;
+}
+input{
+    font-size: 18px;
+    text-indent:2rem;
+}
+.header-img{
+    width: 94%;
+    height: 209px;
+    background-image: url(../images/yuding_03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 3%;
+    border-bottom: 3px red solid;
+}
+.box,.box2{
+    width: 240px;
+    position: relative;
+    background-color: white;
+    margin-left: 11%;
+}
+.phone{
+    width:270px;
+    height: 40px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: #888a85;
+    border-radius: 7px;
+    margin-bottom: 10px;
+   
+}
+.icon-phone{
+    top: 59px;
+    background-image: url("../images/phone-icon.png");
+    background-size:  cover;
+}
+.icon-code{
+    background-image: url("../images/code-icon.png");
+    background-size:  cover;
+}
+.code{
+    width:270px;
+    height: 40px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: #888a85;
+    border-radius: 7px;
+    margin-bottom: 10px; 
+}
+.getcode{
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 30px;
+    top: 5px;
+    right: -28px;
+    background: #ff6161;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    
+}
+.login{
+    width: 220px;
+    height: 35px;
+    background-color: #f14242;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 17%;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+}

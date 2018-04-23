@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+	</head>
+	<body>
+				<button id='demo4' data-options='{"type":"date","beginYear":2018}' class="btn">选择日期 ...</button>
+				<button id='demo5' data-options='{"type":"time","beginHours":10,"endHours":16,"customData":{"i":[{"value":"0","text":"00"},{"value":"0","text":"15"},{"value":"30","text":"30"},{"value":"45","text":"45"},{"value":"45","text":"60"}]}}' class="btn">选择时间 ...</button>
+				<button id='demo6' data-options='{"type":"month"}' class="btn">选择月份 ...</button>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+	
+		<script>
+			(function($) {
+				$.init();
+
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var _self = this;
+						if(_self.picker) {
+							_self.picker.show(function (rs) {
+								console.log(rs.text);
+								_self.picker.dispose();
+								_self.picker = null;
+							});
+						} else {
+							var optionsJson = this.getAttribute('data-options') || '{}';
+							var options = JSON.parse(optionsJson);
+							var id = this.getAttribute('id');
+
+							_self.picker = new $.DtPicker(options);
+							_self.picker.show(function(rs) {
+
+								console.log(rs.text);
+
+								_self.picker.dispose();
+								_self.picker = null;
+							});
+						}
+
+					}, false);
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>
