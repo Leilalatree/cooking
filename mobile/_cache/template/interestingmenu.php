@@ -1,10 +1,10 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/interestingmenu.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/interestingmenu.css"); ?>
 <title>趣味菜谱</title>
 <div class="head">
 	<div class="title">趣味菜谱</div>
