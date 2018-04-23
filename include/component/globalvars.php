@@ -7,7 +7,6 @@ $userName = session("UserName");
 $userEmail = session("UserEmail");
 $role = session("Role");
 
-
 /***** Language  *****/
 //init only when $LANGUAGES setted
 if (isset($LANGUAGES)) {
@@ -28,6 +27,11 @@ if(isset($_SERVER['HTTP_X_FORWARDED_PORT'])){
 
 //是否在微信
 $isInWeChat =  (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') > 0);
+
+//判断是否是测试网站
+if(!isset($isTestSite)){
+    $isTestSite = false;
+}
 
 //是否在使用手机
 //http://detectmobilebrowser.com/mobile

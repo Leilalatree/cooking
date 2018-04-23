@@ -38,15 +38,15 @@ include_once($prepath."component/file.php");
 include_once($prepath."component/template.php");
 include_once($prepath."component/upload.php");
 include_once($prepath."messagequene/startmq.php");
-//include_once($prepath."component/email.php");
-//include_once($prepath."component/http.php");
-//include_once($prepath."component/sms.php");
+include_once($prepath."component/email.php");
+include_once($prepath."component/http.php");
+include_once($prepath."component/sms.php");
 include_once($prepath."component/errorhandle.php");
-
-//include_once($prepath."component/redis.php");
+include_once($prepath."component/coreuser.php");
+include_once($prepath."component/redis.php");
 include_once($prepath."component/globalvars.php");
 include_once($prepath."component/wechat.php");
-
+//include_once($prepath."component/auth.php");
 
 
 //载入全局函数文件
@@ -66,6 +66,7 @@ for($lInc=0;$lInc<4;$lInc++){
     }
     $_INC_FILE = substr($_INC_FILE, 3);
 }
+
 
 
 /*

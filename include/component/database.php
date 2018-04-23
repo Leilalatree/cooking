@@ -4,8 +4,7 @@
 //调用连接到数据库,框架会自动连接默认数据库
 function connectDB($dbName,$forceOriginalDB = false) {
     global $DB_LINK, $TIME_ZONE,$isTemplate , $DATABASE_URL,$DATABASE_REPLICAS_URL , $DATABASE_USERNAME, $DATABASE_PASSWORD, $RDS_LIST, $IS_TESTDB;
-
-   
+    
     if(isset($isTemplate) && isset($DATABASE_REPLICAS_URL) && !$forceOriginalDB){
         $DATABASE_URL_CONNECT = $DATABASE_REPLICAS_URL;
     }else{
@@ -16,7 +15,7 @@ function connectDB($dbName,$forceOriginalDB = false) {
     $DB_LINK = mysqli_connect($DATABASE_URL_CONNECT, $DATABASE_USERNAME, $DATABASE_PASSWORD) or die("Can't connect to database!");
 
     mysqli_select_db($DB_LINK, $dbName) or die("Can't select database($dbName)!");
-    mysqli_query($DB_LINK, "set names utf8");
+    mysqli_query($DB_LINK, "set names utf8mb4");
 
     if (session("TimeZone")) {
         $TIME_ZONE = session("TimeZone");

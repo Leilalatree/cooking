@@ -5,8 +5,6 @@ $isTemplate = true;
 include_once("$prepath_template/lib.php");
 
 $FUNCTION_DECLARE = function_exists("FUNCTION_DECLARED");
-
-
 $_root = realpath($_SERVER["DOCUMENT_ROOT"]);
 
 //载入 自定义模板 文件

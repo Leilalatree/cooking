@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set("PRC");
+
 
 $_CUSTOM_TEMPLATE_PATTERNS = [];
 $_CUSTOM_TEMPLATE_REPLACEMENTS = [];

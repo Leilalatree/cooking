@@ -1,5 +1,4 @@
 <?php
-
 if (!isset($WECHAT_APP_ID) || !isset($WECHAT_APP_SECRET)) {
     return;
 }

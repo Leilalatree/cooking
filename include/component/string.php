@@ -103,7 +103,6 @@ function translateTime($timeString,$displayDateOnly = false) {
     } else if ($dur >= 86400 && $dur<86400*20) {
         return floor($dur / 86400) . '天前';
     } else {
-        
         if($displayDateOnly){
             return explode(" ", $timeString)[0];
         }
