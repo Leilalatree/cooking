@@ -14,7 +14,7 @@
         <span style="display: block;font-size: 13px;color: graytext;padding-top:4px" >简介:用心烹饪爱</span>
     </div>
 </div>
-<div class="middle-list" style="margin-top: 5%;">
+<div class="middle-list" style="margin-top: 27%;">
     <div class="btn like"></div>
     <div class="btn cookbook" onclick="location.href='personal.php'">
         <img src="images/personalpage/mycollection.png">
