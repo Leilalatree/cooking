@@ -1,0 +1,93 @@
+.top{
+    width: 100%;
+    height: 11%;
+    background-color: #9de8c4;
+    color: #FFFFFF;
+    line-height: 100%;
+    margin: 0 auto;
+}
+.title{
+	padding-top: 10%;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size:22px;
+        color: white;
+}
+.backbtn{
+	float:left;
+	width:22px;
+        height: 22px;
+        margin-left: 2%;
+	
+}
+.backbtn img{
+    width:100%;
+}
+
+.head-img{
+    width: 100%;
+    height: 20%;
+    background-color: #8080802e;
+}
+.display-pic{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    padding-top: 20px;
+    position: absolute;
+    top: 15%;
+}
+.head{
+     width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: solid 1px gray;
+    background-color: graytext;
+    position: absolute;
+    top: 6%;
+    left: 2%;
+}
+.forwordbtn{
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.forwordbtn img{
+    width: 100%;
+}
+.info ul{
+    width: 100%;
+}
+.info li{
+    padding-left:2%; 
+}
+.info span{
+    color: #acacac;
+    font-size: 16px;
+    line-height: 50px;
+}
+.slim{
+    width: 100%;
+    height: 48px;
+/*    border:solid 1px black;*/
+    margin-top: 2%;
+}
+.slim input{
+    width: 88%;
+    border:none;
+    height: 40px;
+    margin-left:2%; 
+    border-bottom: solid 1px #c3c3c3;
+    font-size:16px;
+    margin-top: 8px;
+}
+.bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    text-align: center;
+    
+}

@@ -17,17 +17,17 @@ include_once '../include/template.php';
 </div>
 <div class="middle-list" style="margin-top: 27%;">
     <div class="btn like"></div>
-    <div class="btn cookbook" onclick="location.href='personal.php'">
+    <div class="btn " onclick="location.href='personal.php'">
         <img src="images/personalpage/mycollection.png">
     </div>
-    <div class="btn cookbook"onclick="location.href='personal.php'">
+    <div class="btn "onclick="location.href='personal.php'">
         <img src="images/personalpage/mymenu_btn.png">
     </div>
         
-    <div class="btn cookbook"onclick="location.href='personal.php'">
+    <div class="btn "onclick="location.href='personal.php'">
         <img src="images/personalpage/cookingdiary_btn.png">
     </div>
-    <div class="btn cookbook"onclick="location.href='personal.php'">
+    <div class="btn "onclick="location.href='settings.php'">
         <img src="images/personalpage/setting_btn.png">
     </div>
 </div>
