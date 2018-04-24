@@ -7,6 +7,16 @@
     background-size: cover;
     text-align: center;
 }
+.backbtn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image:url(../images/interestingmenu/back_btn.png);
+    background-size: cover;
+    top: 11%;
+    left: 2%;
+}
+
 .head{
     width: 100px;
     height: 100px;

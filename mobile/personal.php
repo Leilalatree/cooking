@@ -8,6 +8,7 @@ include_once '../include/template.php';
 {css/style.css}
 {css/personal.css}
 <div class="top">
+    <div class="backbtn" onclick="location.href='index.php'"></div>
     <div class="head">
         <img src="images/personalpage/profilephoto.png">
         <span class="nickname"><b>Sherry_ry</b></span><br>
