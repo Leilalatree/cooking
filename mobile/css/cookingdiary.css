@@ -1,0 +1,73 @@
+body{
+    background-color: #8080802e;
+}
+.top{
+    width: 100%;
+    height: 11%;
+    background-color: #9de8c4;
+    color: #FFFFFF;
+    line-height: 100%;
+    margin: 0 auto;
+}
+.title{
+	padding-top: 10%;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size:22px;
+        color: white;
+}
+.backbtn{
+	float:left;
+	width:22px;
+        height: 22px;
+        margin-left: 2%;
+	
+}
+.backbtn img{
+    width:100%;
+}
+
+.middle-list ul{
+    width: 100%;
+}
+.middle-list li{
+    width: 100%;
+    height: 25%;
+/*    border: solid 1px #000;*/
+    margin-top: 2%;
+    background-color: white;
+}
+.person{
+    width: 100%;
+    height: 28%;
+/*    border: solid 1px gray;*/
+    padding-left:2%; 
+    font-size: 14px;
+    line-height: 30px;
+}
+.person img{
+    width: 40px;
+    padding-top: 1%;
+}
+.person span{
+    margin-left: 13%;
+    margin-top: -10%;
+    display: block;
+}
+.content{
+    width: 100%;
+    height: 51%;
+    margin-top: 2%;
+/*    border: solid 1px gray;*/
+    padding-left: 2%
+}
+.like,.conments,.time{
+    margin-left: 2%;
+    border: none;
+    width: 15px;
+    float: left;
+}
+.like img,.conments img,.time img{
+    width: 15px;
+}
