@@ -29,7 +29,7 @@ $S3_BUCKET = "magikidroboticlabtest";
 $S3_URL = "https://$S3_BUCKET.s3.cn-north-1.amazonaws.com.cn/";
 
 //Connect DBName
-//$DB_NAME = "zhonggong";
+$DB_NAME = "Cooking";
 
 //region
 $REGION = "China";
