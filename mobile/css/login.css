@@ -10,30 +10,43 @@ body {
 }
 
 .user-logo{
-	padding-top: 90%;
-	padding-left: 15%;
-	width: 110%;
-	height: 10%;
-	position: relative;
-	
+	width: 100%;
+	height: 5%;
+/*        border: solid 1px black;*/
+        margin-top: 92%;
+        text-align: center;	
 }
-
-.user-logo img{
-	height: 30px;
+input{
+    width: 70%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+/*    border:solid 1px #000;*/
+    background-size: 100%;
+    background-repeat:no-repeat;
+    text-indent: 2.3rem;
+    font-size: 17px;
+    color: white;
+    line-height: 28px;
+    font-weight: bold;
+    ime-mode:disabled;
 }
-
+.name{
+    background-image: url(../images/loginpage/user.png);
+    
+}
+.password{
+    background-image: url(../images/loginpage/password.png);
+    margin-top: 3%;
+}
 
 .password-logo{
-	padding-top: 18%;
-	padding-left: 15%;
-	width: 110%;
-	height: 10%;
-	position: relative;
+	width: 100%;
+	height: 5%;
+/*        border: solid 1px black;*/
+        margin-top: 2%;
+        text-align: center;
 	
-}
-
-.password-logo img{
-	height: 32px;
 }
 
 .login-btn{
