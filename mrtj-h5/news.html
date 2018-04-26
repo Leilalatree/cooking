@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <link href="css/mui.min.css" rel="stylesheet" type="text/css"/>
+	    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	    <script type="text/javascript"> 
+	        !function(J){function H(){var d=E.getBoundingClientRect().width;var e=(d/7.5>100*B?100*B:(d/7.5<42?42:d/7.5));E.style.fontSize=e+"px",J.rem=e}var G,F=J.document,E=F.documentElement,D=F.querySelector('meta[name="viewport"]'),B=0,A=0;if(D){var y=D.getAttribute("content").match(/initial\-scale=([\d\.]+)/);y&&(A=parseFloat(y[1]),B=parseInt(1/A))}if(!B&&!A){var u=(J.navigator.appVersion.match(/android/gi),J.navigator.appVersion.match(/iphone/gi)),t=J.devicePixelRatio;B=u?t>=3&&(!B||B>=3)?3:t>=2&&(!B||B>=2)?2:1:1,A=1/B}if(E.setAttribute("data-dpr",B),!D){if(D=F.createElement("meta"),D.setAttribute("name","viewport"),D.setAttribute("content","initial-scale="+A+", maximum-scale="+A+", minimum-scale="+A+", user-scalable=no"),E.firstElementChild){E.firstElementChild.appendChild(D)}else{var s=F.createElement("div");s.appendChild(D),F.write(s.innerHTML)}}J.addEventListener("resize",function(){clearTimeout(G),G=setTimeout(H,300)},!1),J.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(G),G=setTimeout(H,300))},!1),H()}(window);
+	        if (typeof(M) == 'undefined' || !M){
+	            window.M = {};
+	        }
+	    </script> 
+	</head>
+	<body>
+		<div class="eva-header" style="background-color: #9DE8C4;">
+		   
+		        <div class="mui-col-sm-6 mui-col-xs-6" style="text-align: center;width: 100%;text-align: center;">
+		            <li class="mui-table-view-cell current" style="text-align: center;">
+                      			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white;" ></a>
+			<h1 class="mui-title" style="color: white;margin-top: -2%;">每日推荐</h1>
+		            </li>
+		        </div>
+		    </div>
+		</div>
+		<div class="mui-content article " style="padding-top: 11%;">
+			<!--图片轮播-->
+		      <div id="slider" class="mui-slider" >
+				  <div class="mui-slider-group mui-slider-loop">
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="news-1.html">
+				        <img src="images/banner1.png">
+				      </a>
+				    </div>
+				    <div class="mui-slider-item">
+				      <a href="news-1.html">
+				        <img src="images/banner1.png">
+				      </a>
+				    </div>
+				    <div class="mui-slider-item">
+				      <a href="news-2.html">
+				        <img src="images/banner2.png">
+				      </a>
+				    </div>
+				    <div class="mui-slider-item">
+				      <a href="news-3.html">
+				        <img src="images/banner3.png">
+				      </a>
+				    </div>
+				    <div class="mui-slider-item">
+				      <a href="news-4.html">
+				        <img src="images/banner4.png">
+				      </a>
+				    </div>
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="news-1.html">
+				        <img src="images/banner1.png">
+				      </a>
+				    </div>
+				  </div>
+				  <div class="mui-slider-indicator">
+				    <div class="mui-indicator mui-active"></div>
+				    <div class="mui-indicator"></div>
+				    <div class="mui-indicator"></div>
+				    <div class="mui-indicator"></div>
+				  </div>
+			</div>
+			<!--资讯列表-->
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="background-color: #FFFFFF;">
+			    <div class="mui-scroll" style="background-color: #FFFFFF;width: 100%;">
+			        <a href="news.html" class="mui-control-item mui-active" style="width: 33%;">大神亲授</a>
+			        <a href="jkys.html" class="mui-control-item sec" style="width: 33%;"> 健康养生 </a>
+			        <a href="lrks.html" class="mui-control-item thi" style="width: 33%;"> 懒人快手</a>
+			        
+			    </div>
+			</div>
+			<ul class="news mui-active">
+				<li>
+					<a href="newdetali.html">
+						<div class="news-pic"><img src="images/news/news13.png"></div>
+						<div class="news-text">
+							<h2>这可能是全上海最正宗的酸辣汤。
+</h2>
+							<div class="date">
+								<label class="time">05月08日 14:53</label>
+								<label class="view">90</label>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="suanmeitang.html">
+						<div class="news-pic"><img src="images/news/news12.png"></div>
+						<div class="news-text">
+							<h2>怎样熬出一杯盛夏的酸梅汤？带着冰块、带着灵魂
+</h2>
+							<div class="date">
+								<label class="time">05月08日 14:53</label>
+								<label class="view">90</label>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="zhou.html">
+						<div class="news-pic"><img src="images/news/news11.png"></div>
+						<div class="news-text">
+							<h2>粥怎么煮能糯得化开？在第一步！不是人人都能煮出治愈系的粥</h2>
+							<div class="date">
+								<label class="time">05月08日 14:53</label>
+								<label class="view">90</label>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="ji.html">
+						<div class="news-pic"><img src="images/news/news14.png"></div>
+						<div class="news-text">
+							<h2>鸡鸡复鸡鸡系列：鸡汤＋大盘鸡菜谱在此，到家直接炖啦！</h2>
+							<div class="date">
+								<label class="time">05月08日 14:53</label>
+								<label class="view">90</label>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="zhupai.html">
+						<div class="news-pic"><img src="images/news/news15.png"></div>
+						<div class="news-text">
+							<h2>离开炸猪排的辣酱油还能这么吃？！</h2>
+							<div class="date">
+								<label class="time">05月08日 14:53</label>
+								<label class="view">90</label>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			
+			
+		</div>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+	    <script type="text/javascript" src="js/app.js" ></script>
+	</body>
+</html>

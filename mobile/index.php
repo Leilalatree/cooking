@@ -15,7 +15,7 @@ include_once '../include/template.php';
 		<img style="width: 70%;height: 70%;" src="images/index/personal_btn.png">
 	</div>
 </div>
-<div class="btn" onclick="location.href='everydayrecommend.php'">
+<div class="btn" onclick="location.href='../mrtj-h5/news.html'">
 		<img style="width: 100%;height: 100%;" src="images/index/everydayrecommend.png">
 			
 	</div>

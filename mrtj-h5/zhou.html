@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript">
+			! function(J) {
+				function H() {
+					var d = E.getBoundingClientRect().width;
+					var e = (d / 7.5 > 100 * B ? 100 * B : (d / 7.5 < 42 ? 42 : d / 7.5));
+					E.style.fontSize = e + "px", J.rem = e
+				}
+				var G, F = J.document,
+					E = F.documentElement,
+					D = F.querySelector('meta[name="viewport"]'),
+					B = 0,
+					A = 0;
+				if(D) {
+					var y = D.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+					y && (A = parseFloat(y[1]), B = parseInt(1 / A))
+				}
+				if(!B && !A) {
+					var u = (J.navigator.appVersion.match(/android/gi), J.navigator.appVersion.match(/iphone/gi)),
+						t = J.devicePixelRatio;
+					B = u ? t >= 3 && (!B || B >= 3) ? 3 : t >= 2 && (!B || B >= 2) ? 2 : 1 : 1, A = 1 / B
+				}
+				if(E.setAttribute("data-dpr", B), !D) {
+					if(D = F.createElement("meta"), D.setAttribute("name", "viewport"), D.setAttribute("content", "initial-scale=" + A + ", maximum-scale=" + A + ", minimum-scale=" + A + ", user-scalable=no"), E.firstElementChild) {
+						E.firstElementChild.appendChild(D)
+					} else {
+						var s = F.createElement("div");
+						s.appendChild(D), F.write(s.innerHTML)
+					}
+				}
+				J.addEventListener("resize", function() {
+					clearTimeout(G), G = setTimeout(H, 300)
+				}, !1), J.addEventListener("pageshow", function(b) {
+					b.persisted && (clearTimeout(G), G = setTimeout(H, 300))
+				}, !1), H()
+			}(window);
+			if(typeof(M) == 'undefined' || !M) {
+				window.M = {};
+			}
+		</script>
+		<style type="text/css">
+			p.p1 {
+				text-indent: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="eva-header" style="background-color: #9DE8C4;">
+		   
+		        <div class="mui-col-sm-6 mui-col-xs-6" style="text-align: center;width: 100%;text-align: center;">
+		            <li class="mui-table-view-cell current" style="text-align: center;">
+                      			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white;"></a>
+			<h1 class="mui-title" style="color: white;margin-top: -2%;">每日推荐</h1>
+		            </li>
+		        </div>
+		    </div>
+		</div>
+		<div class="mui-content article " style="padding-top: 11%;">
+			<h2 class="article-title"><a href="news.html"> 粥怎么煮能糯得化开？在第一步！不是人人都能煮出治愈系的粥</a></h2>
+			<div class="article-text">
+				文章来源：
+				<a href="">http://baidu.com/</a>
+				<label class="time">2017年6月29日 8:30</label>
+				<label class="view">1198</label>
+			</div>
+			<div class="mui-content-padded">
+				<p>
+					<span>粥，家家都会做。</span>
+				</p>
+				<p>
+					<span>但不一定你家的粥能做到“治愈”。</span>
+				</p>
+				<p>
+					<span>发烧，在某知名粤菜馆喝了碗最便宜的白粥，</span>
+				</p>
+				<p>
+					<span>米粒 似化非化， 极柔软，</span>
+				</p>
+				<p>
+					<span>一股热乎乎的柔软抱住了胃。</span>
+				</p>
+				<p>
+					<span>毫不夸张地说：吃了这么多米其林，</span>
+				</p>
+				<p>
+					竟是最便宜的白粥，有了讲不清楚的幸福感。
+				</p>
+				<p>
+					<span><span>我们决定，在家也要做出如此动人的<span>粥</span></span>
+					</span>
+				</p>
+				<p>
+					<span><span>目标：能让米粒软糯到化开的粥</span></span>
+				</p>
+				<p>
+					<span>我们找到的这位他，精彩的简历是这样的：</span>
+				</p>
+				<p>
+					<span>粤菜从业35年，香港学徒，后在东南亚研习4年</span>
+				</p>
+				<p>
+					<span>先后两次在APEC峰会上为多国首脑制作粤菜</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<img src="images/news/3-1.jpg" />
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<strong><span>▲Peter Zhang</span></strong>
+				</p>
+				<p>
+					<span>皇家艾美酒店中餐厅行政主厨</span>
+				</p>
+				<p>
+					<span>平时做出的粥是这样的，米是米，水是水，</span><span>无法融合</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-2.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					<span>在办公室讨论怎样弱化“粥”里的米粒感，才能做到绵密化开？</span>
+				</p>
+				<p>
+					<span>有同学骄傲地说：<span>这你都不知道？！ 把米粒碾碎再烧啊！</span></span>
+				</p>
+				<p>
+					<span><span>大厨说：呵呵</span></span>
+				</p>
+				<p>
+					<span><span><br />
+</span></span>
+				</p>
+				<p>
+<img src="images/news/3-3.jpg" />				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span>能化开的 <strong>“皮蛋瘦肉粥”</strong></span>
+				</p>
+				<p>
+					<span>粤菜粥，白粥的底一定是先烧好的，煮好白粥再加料</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<strong>食材准备</strong>
+				</p>
+				<p>
+					<span><span>白粥部分：1公斤水｜100克米｜10g<span>油</span></span>
+					</span>
+				</p>
+				<p>
+					<span>配料：葱｜姜｜皮蛋｜薄脆｜胡椒粉｜盐｜瘦肉</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-4.jpg" />				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span>一碗粥的胜负，</span>其实从第一步就分出来了。
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					<strong><span>一、油拌米<span>（你知道吗）</span></span></strong>
+				</p>
+				<p>
+					在米里淋少许油，搅拌均匀。
+				</p>
+				<p>
+					<span>1 :建议选用</span><span>新大米</span>
+				</p>
+				<p>
+					<span>无须淘洗浸泡，</span><span>保留米粒最原始的营养</span>
+				</p>
+				<p>
+					陈米不但要浸泡，煮出也不香
+				</p>
+				<p>
+					<span><span>100g的新大米</span></span><span>里可以加入<span>10g左右的油</span></span>
+				</p>
+				<p>
+					<span>口感绵密的关键</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-5.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					▲把握不准看动图
+				</p>
+				<p>
+					一小圈就可以~
+				</p>
+				<p>
+					<span><span>二、煮开水</span></span>
+				</p>
+				<p>
+					注意啦，此方法电饭煲不适用
+				</p>
+				<p>
+					<span><span>水煮开后再倒入米！！KEY</span></span>
+				</p>
+				<p>
+					<span>水煮开加米，防止糊锅</span>
+				</p>
+				<p>
+					<span><span>水：米 = 20:1</span></span>
+				</p>
+				<p>
+					<span><span><br />
+</span></span>
+				</p>
+				<p>
+<img src="images/news/3-6.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					<span>注意：</span><span>一定要等</span><span>水开了再加米！</span>
+				</p>
+				<p>
+					<span>水开了再加米！！</span>
+				</p>
+				<p>
+					<span><span>水开了再加米！！！</span></span>
+				</p>
+				<p>
+					<span>（小编自己熬粥时，偷懒直接冷水下米，结果糊锅了）</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<strong><span>三、熬粥</span></strong>
+				</p>
+				<p>
+					搅匀之后<span>大火烧开</span>，转中火熬煮<span>45分钟</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-7.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					因为是开水煮米，不会糊锅
+				</p>
+				<p>
+					不用装模作样搅拌了，
+				</p>
+				<p>
+					煮开了水不要溢出来就可以啦。
+				</p>
+				<p>
+					<span>这样白粥底就好了</span>
+				</p>
+				<p>
+					<span>如果想只喝白粥就OK了，真的糯得化开</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-8.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					▲真的看不见米粒哦！！
+				</p>
+				<p>
+					<span>等到米熬到这个状态的时候，再加配料。不要着急！</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<strong><span>四、放配料</span></strong>
+				</p>
+				<p>
+					将备好的肉丝、皮蛋块依次放进锅里。
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+<img src="images/news/3-9.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					▲张大厨版肉丝
+				</p>
+				<p>
+					是选用精瘦肉
+				</p>
+				<p>
+					佐以盐｜桂皮｜八角｜香叶腌制而成的
+				</p>
+				<p>
+					慢蒸两小时、再晾凉拆丝的成品
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					▼你也可以
+				</p>
+				<p>
+					<span>简易版肉丝制作</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-10.jpg" />				</p>
+				<p>
+					<span><span><br />
+</span></span>
+				</p>
+				<p>
+					<span><span>市场买到的瘦肉</span></span>
+				</p>
+				<p>
+					<span><span>用</span></span><span><span>淀粉、盐、糖 </span><span>腌制15分钟</span></span>
+				</p>
+				<p>
+					<span><span>切成丝，就可以煲粥了</span></span>
+				</p>
+				<p>
+					接下来放入切好的皮蛋
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+<img src="images/news/3-11.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					<span>▲张大厨提醒您：</span><span><span>皮蛋最好选</span><span>用</span><span><span>无盐</span></span><span>松花蛋</span></span>
+				</p>
+				<p>
+					<span><span>五、调味</span></span>
+				</p>
+				<p>
+					依次下姜丝、葱花。放入盐、胡椒粉调味。
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+<img src="images/news/3-12.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					Tips：葱、姜的量可按个人喜好添加哦<br />
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+<img src="images/news/3-13.jpg" />				</p>
+				<p>
+<img src="images/news/3-14.jpg" />				</p>
+				<p>
+<img src="images/news/3-15.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					盐一勺半 胡椒粉4小勺 薄脆少许
+				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+<img src="images/news/3-16.jpg" />				</p>
+				<p>
+					<br />
+				</p>
+				<p>
+					▲搅拌均匀
+				</p>
+				<p>
+					<span>米粒能似化非化</span>的 皮蛋瘦肉粥<span><span>完成</span></span>
+				</p>
+				<p>
+					<span>好粥对于米的要求其实很高哟！</span>
+				</p>
+				<p>
+					<span>饱满的新米</span><span>才能煲出完美的治愈系粥~</span>
+				</p>
+				<p>
+					<span>尤其是才刚打磨完15天的 <span><span>五 常 鲜 大 米</span></span>
+					</span>
+				</p>
+				<p>
+					<span>五常稻花香鲜米500*5礼盒</span>
+				</p>
+				<p>
+					<span><span>￥86元 包邮 买一送一</span></span>
+				</p>
+				<p>
+					<span>配送范围：江、浙、沪、皖</span>
+				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+<img src="images/news/3-17.jpg" />				</p>
+				<p>
+					<span><br />
+</span>
+				</p>
+				<p>
+					<span>张大厨说：</span>
+				</p>
+				<p>
+					“<span>煲粥跟做人一样，需要慢慢去体会</span>
+				</p>
+				<p>
+					从最浅的到深入的，循序渐进
+				</p>
+				<p>
+					秉承着这些传统，我会用心去煲好每一锅粥
+				</p>
+				<p>
+					每一次宴会都全力以赴
+				</p>
+				<p>
+					把最美好的食品呈现给我们的客人”
+				</p>
+				<p>
+					<br />
+				</p>
+	</body>
+
+</html>
