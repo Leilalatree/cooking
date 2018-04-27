@@ -1,0 +1,115 @@
+.nav{
+    width: 100%;
+    height: 47px;
+    background-color: #9de8c4;
+    color: #FFFFFF;
+    line-height: 100%;
+    margin: 0 auto;
+}
+.web-title{
+	padding-top: 5%;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size:17px;
+        color: white;
+        font-weight: bold;
+}
+.backbtn{
+	float:left;
+	width:20px;
+        height: 20px;
+        margin-left: 2%;
+	
+}
+.backbtn img{
+    width:87%;
+}
+.top{
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    
+}
+.top img{
+    width: 66px;
+    height:66px;
+    border-radius: 50px;
+    background-color: graytext;
+    margin-left: 4%;
+    float: left;
+}
+.top p{
+    width: 100px;;
+    margin-left: 2%;
+    font-size: 19px;
+    line-height: 66px;
+    float: left;
+}
+.article{
+    width: 92%;
+    margin: 3% 4% 0 4%;
+
+}
+.article-title{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;   
+}
+.article-text{
+    width: 100%;
+    margin-top: 2%;
+    font-size: 16px;
+    text-indent: 34px;
+    line-height: 25px;
+    
+}
+.btn-section{
+    width: 100%;
+    height: 2%;
+    margin: 3% 0 3% 4%;
+}
+.like,.conments,.time{
+    border: none;
+    width: 49px;
+    float: left;
+}
+.like img,.conments img,.time img{
+    width: 15px;
+    float: left;
+}
+.like p,.comments p,.time p{
+    float: left;
+    margin-left: 8%;
+    font-size: 12px;
+    line-height: 16px;
+}
+.comments-section {
+   width: 92%;
+    margin: 0 4% 3% 4%;  
+    
+}
+.person{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;   
+}
+.commenting{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    border-top: solid 1px  #b7b7b7;
+}
+.commenting input{
+    width: 92%;
+    height: 30px;
+    color: graytext;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 4%;
+    background-color: #8080802e;
+    border: none;
+    text-indent: 10px;
+    border-radius: 7px;
+}

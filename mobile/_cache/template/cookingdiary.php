@@ -1,10 +1,10 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/cookingdiary.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/cookingdiary.css"); ?>
 <title>个人设置</title>
 <!--navigation-->
 <div class="top">
@@ -15,7 +15,7 @@ include_once '../include/template.php';
 </div>
 <div class="middle-list">
     <ul>
-        {for:$i=0;$i<3;$i++}
+        <?php for($i=0;$i<3;$i++){ ?>
         <li >
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
@@ -37,7 +37,7 @@ include_once '../include/template.php';
                 </div>
             </div>
         </li>
-        {/for}
+        <?php }?>
     </ul>
 </div>
 <div class="new-diary">

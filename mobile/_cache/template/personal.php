@@ -1,12 +1,12 @@
 <?php
 
-include_once '../include/template.php';
+
 ?>
 
 <title>个人中心</title>
-{viewport375}
-{css/style.css}
-{css/personal.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/personal.css"); ?>
 <div class="top">
     <div class="backbtn" onclick="location.href='index.php'"></div>
     <div class="head">
