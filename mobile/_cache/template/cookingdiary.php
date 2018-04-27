@@ -41,5 +41,5 @@
     </ul>
 </div>
 <div class="new-diary">
-    <button class="add-diary"></button>
+    <button class="add-diary"  onclick="location.href='diary-editor.php'"></button>
 </div>

@@ -1,0 +1,85 @@
+.nav{
+    width: 100%;
+    height: 47px;
+    background-color: #9de8c4;
+    color: #FFFFFF;
+    line-height: 100%;
+    margin: 0 auto;
+}
+.web-title{
+	padding-top: 5%;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size:17px;
+        color: white;
+        font-weight: bold;
+}
+.backbtn{
+	float:left;
+	width:20px;
+        height: 20px;
+        margin-left: 2%;
+	
+}
+.backbtn img{
+    width:87%;
+}
+.content{
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+/*    border: solid #000 1px;*/
+    text-align: center;
+}
+.article-title,.article-text{
+    width: 100%;
+    text-align: center;
+}
+.article-title input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: solid #999999 1px;
+    text-indent: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    color: #cccccc;
+}
+.article-text textarea{
+    width: 100%;
+    border: none;
+/*    border-bottom: solid #999999 1px;*/
+    text-indent: 10px;
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 1%;    
+}
+.add-photo{
+    width: 100%;
+    border-top: solid #cccccc 1px;
+}
+.add-photo button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    float: left;
+    margin-top: 2%;
+    border-radius: 10px;
+    border:solid #999999 1px;
+}
+.footer{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+}
+.footer button{
+    width: 100%;
+    height: 100%;
+    background-color: #9de8c4;
+    color: white;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    border: none;
+}
