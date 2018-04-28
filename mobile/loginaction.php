@@ -14,10 +14,10 @@
         //判断用户名或密码是否正确
         if($username==$ret['username']&&$password==$ret['password']) {
             
-//          //开启session
-//          session_start();
-//          //创建session
-//          $_SESSION['user']=$username;
+            //开启session
+            session_start();
+            //创建session
+            $_SESSION['user']=$username;
 //          //写入日志
 //          $ip = $_SERVER['REMOTE_ADDR'];
 //          $date = date('Y-m-d H:m:s');

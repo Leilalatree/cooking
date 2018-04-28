@@ -19,12 +19,8 @@
     <div class="password-logo">
         <input  class="password" type="text" name="=password" size="28">
     </div>
-
-    	
-
-    <div class="login-btn" >
-        <img src="images/loginpage/login.png" />
-         <?php
+    <!--提示信息-->
+    <?php
     	 	$err=isset($_GET["err"])?$_GET["err"]:"";
     	 	switch($err) {
     	 		case 1:
@@ -35,7 +31,13 @@
     	 		break;
     	 		}
     	 		?>
+
+
+    <div class="login-btn" >
+        <img src="images/loginpage/login.png" />
+         
     </div>
+
 
     <div class="regin-btn" onclick="location.href='regin.php'">
         <img src="images/loginpage/regin.png" />
