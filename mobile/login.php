@@ -37,14 +37,6 @@ include_once '../include/template.php';
     	 		?>
 
 
-<<<<<<< HEAD
-    <div class="login-btn">
-        <img src="images/loginpage/login.png" />
-         
-    </div>
-=======
-    
->>>>>>> ce880a97bea48a64cc4d8a1c1ee971572e0fc31d
 
 
     <div class="regin-btn" onclick="location.href='regin.php'">
@@ -68,21 +60,6 @@ include_once '../include/template.php';
       } 
       return true; 
     } 
-<!-- $.post("action/login-action.php",{-->
-//        "Action":"search",
-//        "Id":storeId,
-//        },function(re){
-//        arr = JSON.parse(re);
-//          if(arr.ErrorCode=='0'){
-//              data = JSON.parse(arr.Result);
-//              insert_html_box(data);   
-//          }
-//          else if(arr.ErrorCode=='1'){
-//              //没有数据
-//              $(".right").html("");
-//              //alert(arr.ErrorMessage);
-//          }
-//    });
 
 </script>
 
