@@ -1,5 +1,5 @@
 <?php
-include_once '../../include/template.php';
+
     //声明变量
     $username = post('username');
     $password = post('password');
