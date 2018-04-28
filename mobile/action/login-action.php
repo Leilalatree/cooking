@@ -43,7 +43,7 @@ include_once '../../include/template.php';
         }
     }else {
         //用户名或密码为空，赋值err为2
-//          header("Location:login.php?err=2");
+          header("Location:login.php?err=2");
 
     }
 ?>
