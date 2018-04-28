@@ -1,8 +1,10 @@
 <?php
     //声明变量
-    $username = isset($_POST['username'])?$_POST['username']:"";
-    $password = isset($_POST['password'])?$_POST['password']:"";
-
+    $username = post('username');
+    $password = post('password');
+    
+    var_dump($username);
+    
     //判断用户名和密码是否为空
     if(!empty($username)&&!empty($password)) {
 
@@ -41,7 +43,7 @@
         }
     }else {
         //用户名或密码为空，赋值err为2
-      header("Location:login.php?err=2");
+      header("Location:index.php");
 
     }
 ?>
