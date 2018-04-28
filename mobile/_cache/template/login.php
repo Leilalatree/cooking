@@ -33,7 +33,7 @@
     	 		?>
 
 
-    <div class="login-btn" >
+    <div class="login-btn" type="submit">
         <img src="images/loginpage/login.png" />
          
     </div>

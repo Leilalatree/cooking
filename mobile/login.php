@@ -33,7 +33,7 @@ include_once '../include/template.php';
     	 		?>
 
 
-    <div class="login-btn" >
+    <div class="login-btn">
         <img src="images/loginpage/login.png" />
          
     </div>
