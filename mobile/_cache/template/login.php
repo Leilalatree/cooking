@@ -1,13 +1,21 @@
 <?php
-include_once '../include/template.php';
+
 include_once '../bmob-php-sdk-master/lib/BmobUser.class.php';
 include_once '../bmob-php-sdk-master/lib/BmobObject.class.php';
-    
+try {
+	$bmobObj = new BmobObject("GameScore");
+	$res=$bmobObj->create(array("playerName"=>"比目","score"=>89)); 
+//	$bmobUser = new BmobUser();
+//	$res = $bmobUser->login("test111@qq.com","111111");
+	    var_dump($res);
+} catch (Exception $e) {
+    echo $e;
+}
 
 ?>
-{viewport375}
-{css/style.css}
-{css/login.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/login.css"); ?>
 
 <title>登录</title>
 
