@@ -10,15 +10,19 @@ include_once '../include/template.php';
 
 <title>登录</title>
 
-<form name="login" method="post" action="loginaction.php">
+<form name="login" method="post" action="action/login-action.php" onsubmit="return enter()">
     <div class="user-logo">
-        <input  class="name" type="text" name="=username" size="28"
+        <input  class="name" type="text" name="username" size="28"
         	value="<?php echo isset($_COOKIE["wang"])?$_COOKIE["wang"]:"";?>">
     </div>
 
     <div class="password-logo">
         <input  class="password" type="text" name="=password" size="28">
     </div>
+    <div class="login-btn" >
+        <button type="submit"></button>
+    </div>
+</form>
     <!--提示信息-->
     <?php
     	 	$err=isset($_GET["err"])?$_GET["err"]:"";
@@ -33,17 +37,47 @@ include_once '../include/template.php';
     	 		?>
 
 
-    <div class="login-btn" >
-        <img src="images/loginpage/login.png" />
-         
-    </div>
+    
 
 
     <div class="regin-btn" onclick="location.href='regin.php'">
         <img src="images/loginpage/regin.png" />
     </div>
 </form>
+<script>
+    function enter(){ 
+      var username=document.getElementById("username").value;//获取form中的用户名 
+      var password=document.getElementById("password").value; 
+      var regex=/^[/s]+$/;//声明一个判断用户名前后是否有空格的正则表达式 
+      if(regex.test(username)||username.length==0)//判定用户名的是否前后有空格或者用户名是否为空 
+        { 
+          alert("用户名格式不对"); 
+          return false; 
+        } 
+      if(regex.test(password)||password.length==0)//同上述内容 
+      { 
+        alert("密码格式不对"); 
+        return false; 
+      } 
+      return true; 
+    } 
+<!-- $.post("action/login-action.php",{-->
+//        "Action":"search",
+//        "Id":storeId,
+//        },function(re){
+//        arr = JSON.parse(re);
+//          if(arr.ErrorCode=='0'){
+//              data = JSON.parse(arr.Result);
+//              insert_html_box(data);   
+//          }
+//          else if(arr.ErrorCode=='1'){
+//              //没有数据
+//              $(".right").html("");
+//              //alert(arr.ErrorMessage);
+//          }
+//    });
 
+</script>
 
 
 

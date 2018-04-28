@@ -57,8 +57,14 @@ input{
 	position: relative;
 }
 
-.login-btn img{
-	height: 45px;
+.login-btn button{
+        width:145px;
+        height: 47px;
+        border: none;
+        border-radius: 30px;
+        background-color: transparent;
+        background-image:url(../images/loginpage/login.png);
+        background-size: cover;
 }
 
 .regin-btn{
