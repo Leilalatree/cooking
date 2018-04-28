@@ -37,7 +37,14 @@
     	 		?>
 
 
+<<<<<<< HEAD
+    <div class="login-btn" type="submit">
+        <img src="images/loginpage/login.png" />
+         
+    </div>
+=======
     
+>>>>>>> ce880a97bea48a64cc4d8a1c1ee971572e0fc31d
 
 
     <div class="regin-btn" onclick="location.href='regin.php'">
