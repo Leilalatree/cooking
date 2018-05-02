@@ -31,7 +31,7 @@ input{
     font-weight: bold;
     ime-mode:disabled;
 }
-.name{
+.username{
     background-image: url(../images/loginpage/user.png);
     
 }

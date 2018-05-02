@@ -1,8 +1,6 @@
 <?php
 
 
-
-
 ?>
 <meta name='viewport' content='width=375,user-scalable=no'>
 <?php _includeCSS("css/style.css"); ?>
@@ -10,16 +8,23 @@
 
 <title>登录</title>
 
-<form name="login" method="post" action="action/login-action.php" onsubmit="return enter()">
+<form name="login" action="../mobile/action/login-action.php" onsubmit="return enter()" required="required"
+                            value="<?php echo isset($_COOKIE["wang"])?$_COOKIE["wang"]:"";?>" method="post">
     <div class="user-logo">
-        <input  class="name" type="text" name="username" size="28"
-        	value="<?php echo isset($_COOKIE["wang"])?$_COOKIE["wang"]:"";?>">
+        <input  class="username" type="text" name="username" size="28">
+        	<!--value="<?php echo isset($_COOKIE["wang"])?$_COOKIE["wang"]:"";?>"-->
     </div>
 
     <div class="password-logo">
         <input  class="password" type="text" name="=password" size="28">
     </div>
+    
+    <!--登录按钮-->
     <div class="login-btn" >
+<<<<<<< HEAD
+        <button type="submit" value="登录"></button>
+    </div>
+=======
         <button type="submit"></button>
     </div>
 </form>
@@ -38,12 +43,20 @@
 
 
 
+>>>>>>> 7d8017ba3657b300debe3e2a29e4eccf9da50660
 
+    <!--注册按钮-->
     <div class="regin-btn" onclick="location.href='regin.php'">
         <img src="images/loginpage/regin.png" />
     </div>
 </form>
+
 <script>
+<<<<<<< HEAD
+	
+	function login(){
+	alert("请填写完整信息!");
+=======
     function enter(){ 
       var username=document.getElementById("username").value;//获取form中的用户名 
       var password=document.getElementById("password").value; 
@@ -60,9 +73,10 @@
       } 
       return true; 
     } 
+>>>>>>> 7d8017ba3657b300debe3e2a29e4eccf9da50660
 
+	
+	}
 </script>
-
-
 
 
