@@ -13,16 +13,16 @@
         <img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">
     </div>
 </div>
-
-    <div class="user-logo">
-        <input  class="name" type="text" name="=UserName" minlength="2" maxlength='20'>
+<form action="../mobile/action/regin-action.php" method="post">
+	<div class="user-logo">
+        <input  class="name" type="text" name="=UserName" minlength="2" maxlength='20' required="required">
     </div>
 
     <div class="password-logo">
-        <input  class="password" type="text" name="=UserName"  minlength="2" maxlength='16'>
+        <input  class="password" type="text" name="=UserName"  minlength="2" maxlength='16' required="required">
     </div>
 
-
-    <div class="regin-btn" onclick="location.href='index.php'">
+    <button class="regin-btn" type="submit">
         <img src="images/loginpage/regin-2.png" />
-    </div>
+    </button>
+</form>

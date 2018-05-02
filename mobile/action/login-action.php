@@ -1,49 +1,38 @@
 <?php
-include_once '../../include/template.php';
     //声明变量
-    $username = post('username');
-    $password = post('password');
+        $username = isset($_POST['username'])?$_POST['username']:"";
+        $password = isset($_POST['password'])?$_POST['password']:"";
     
-    
+     
     //判断用户名和密码是否为空
     if(!empty($username)&&!empty($password)) {
-
+        //建立连接
+        $conn = mysql_connect("Cooking","root","root","php");
         //准备SQL语句
         $sql_select = "SELECT username,password FROM User WHERE username = '$username' AND password = '$password'";
         //执行SQL语句
-        $ret = mysqli_query($sql_select);
+        $ret = mysqli_query($conn,$sql_select);
+
+        $row = mysqli_fetch_array($ret);
 
         //判断用户名或密码是否正确
-        if($username==$ret['username']&&$password==$ret['password']) {
-            
-            //开启session
-            session_start();
-            //创建session
-            $_SESSION['user']=$username;
-//          //写入日志
-//          $ip = $_SERVER['REMOTE_ADDR'];
-//          $date = date('Y-m-d H:m:s');
-//
-//          $info = sprintf("当前访问用户：%s,IP地址：%s,时间：%s \n",$username, $ip, $date);
-//          $sql_logs = "INSERT INTO Logs(username,ip,date) VALUES('$username','$ip','$date')";
-//
-//          //日志写入文件，如实现此功能，需要创建文件目录logs
-//          $f = fopen('./logs/'.date('Ymd').'.log','a+');
-//
-//          fwrite($f,$info);
-//          fclose($f);
+        if($username==$row['username']&&$password==$row['password']) {
 
             //跳转到loginsucc.php页面
             header("Location:index.php");
-            
+            //关闭数据库
+            mysqli_close($conn);
         }else {
             //用户名或密码错误，赋值err为1
-          header("Location:login.php?err=1");
-
+            echo "<script>alert('用户名或密码不正确！');history.go(-1);</script>"; 
         }
     }else {
         //用户名或密码为空，赋值err为2
-//          header("Location:login.php?err=2");
-
+        echo "<script>alert('请输入用户名和密码');history.go(-1);</script>"; 
     }
+
+//              echo "<script>alert('用户名或密码不正确！');history.go(-1);</script>"; 
+        
+    
+
 ?>
