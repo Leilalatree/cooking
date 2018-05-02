@@ -4,10 +4,10 @@
 
     $username = isset($_POST['username'])?$_POST['username']:"";
     $password = isset($_POST['password'])?$_POST['password']:"";
-    var_dump(username,password)
+
 
         //建立连接
-        $conn = mysqli_connect('Cooing','root','root','php');
+        $conn = mysqli_connect('localhost','root','root','Cooking');
         //准备SQL语句,查询用户名
         $sql_select="SELECT username FROM User WHERE username = '$username'";
         //执行SQL语句
@@ -21,7 +21,7 @@
 
             //用户名不存在，插入数据
             //准备SQL语句
-            $sql_insert = "INSERT INTO User(username,password,sex,qq,email,phone,address) VALUES('$username','$password','$sex','$qq','$email','$phone','$address')";
+            $sql_insert = "INSERT INTO User(username,password) VALUES('$username','$password')";
             //执行SQL语句
             mysqli_query($conn,$sql_insert);
             echo "<script>alert('注册成功！');history.go(-1);</script>"; 

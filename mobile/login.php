@@ -16,7 +16,7 @@ include_once '../include/template.php';
     </div>
 
     <div class="password-logo">
-        <input  class="password" type="text" name="=password" size="28">
+        <input  class="password" type="text" name="password" size="28">
     </div>
     
     <!--登录按钮-->
@@ -30,13 +30,6 @@ include_once '../include/template.php';
     </div>
 </form>
 
-<script>
-	
-	function login(){
-	alert("请填写完整信息!");
 
-	
-	}
-</script>
 
 

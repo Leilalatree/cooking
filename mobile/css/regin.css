@@ -70,6 +70,15 @@ input{
 	position: relative;
 	
 }
+.regin-btn button{
+        width:145px;
+        height: 47px;
+        border: none;
+        border-radius: 30px;
+        background-color: transparent;
+        background-image:url(../images/loginpage/regin-2.png));
+        background-size: cover;
+}
 
 .regin-btn img{
 	height: 45px;
