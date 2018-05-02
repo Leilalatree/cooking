@@ -3,18 +3,21 @@
     //声明变量
     $username = post('username');
     $password = post('password');
-    
+    var_dump($password);
+    die();
     
     //判断用户名和密码是否为空
     if(!empty($username)&&!empty($password)) {
 
         //准备SQL语句
-        $sql_select = "SELECT username,password FROM User WHERE username = '$username' AND password = '$password'";
+        $sql_select = "SELECT username FROM User WHERE username = '$username'";
+        $data = getRowData($sql_select);
+        $password2 = $data['password'];
         //执行SQL语句
-        $ret = mysqli_query($sql_select);
+//        $ret = mysqli_query($sql_select);
 
         //判断用户名或密码是否正确
-        if($username==$ret['username']&&$password==$ret['password']) {
+        if($password==$password2) {
             
             //开启session
             session_start();
