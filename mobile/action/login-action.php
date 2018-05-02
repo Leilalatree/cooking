@@ -2,7 +2,8 @@
     //声明变量
         $username = isset($_POST['username'])?$_POST['username']:"";
         $password = isset($_POST['password'])?$_POST['password']:"";
-    
+        var_dump($password);
+        die();
      
     //判断用户名和密码是否为空
     if(!empty($username)&&!empty($password)) {
