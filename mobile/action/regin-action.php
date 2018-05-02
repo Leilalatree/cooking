@@ -21,7 +21,7 @@
 
             //用户名不存在，插入数据
             //准备SQL语句
-            $sql_insert = "INSERT INTO User(username,password) VALUES('$username','$password')";
+            $sql_insert = "INSERT INTO User(userID,username,password,userimage,personalintroduction,sex,job,age) VALUES('','$username','$password','','','','','')";
             //执行SQL语句
             mysqli_query($conn,$sql_insert);
             echo "<script>alert('注册成功！');history.go(-1);</script>"; 
