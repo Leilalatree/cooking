@@ -28,7 +28,12 @@
         }
     }else {
         //用户名或密码为空，赋值err为2
+<<<<<<< HEAD
         echo "<script>alert('请输入用户名和密码');history.go(-1);</script>"; 
+=======
+          header("Location:login.php?err=2");
+
+>>>>>>> 7d8017ba3657b300debe3e2a29e4eccf9da50660
     }
 
 //              echo "<script>alert('用户名或密码不正确！');history.go(-1);</script>"; 
