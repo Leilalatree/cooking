@@ -7,10 +7,10 @@ include_once '../include/template.php';
 {css/index.css}
 <title>首页</title>
 <div class="head">
-	<div class="title">趣味菜谱</div>
-	<div class="backbtn" onclick="location.href='index.php'" >
+	<div class="title">Cooking</div>
+	<!--<div class="backbtn" onclick="location.href='index.php'" >
 		<img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">
-	</div>
+	</div>-->
 	<div class="rightbtn" onclick="location.href='personal.php'">
 		<img style="width: 70%;height: 70%;" src="images/index/personal_btn.png">
 	</div>

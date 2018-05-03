@@ -5,11 +5,11 @@
 <meta name='viewport' content='width=375,user-scalable=no'>
 <?php _includeCSS("css/style.css"); ?>
 <?php _includeCSS("css/cookingdiary.css"); ?>
-<title>个人设置</title>
+<title>烹饪日记</title>
 <!--navigation-->
 <div class="top">
     <div class="title">烹饪日记</div>
-    <div class="backbtn" onclick="location.href='personal.php'" >
+    <div class="backbtn" onclick="location.href='index.php'" >
         <img  src="images/interestingmenu/back_btn.png">
     </div>
 </div>

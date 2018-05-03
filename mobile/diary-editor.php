@@ -7,10 +7,11 @@ include_once '../include/template.php';
 {css/diary-editor.css}
 <title>编辑日记</title>
 <!--navigation-->
-<div class="nav">
-    <div class="web-title">编辑</div>
-    <div class="backbtn" onclick="location.href='cookingdiary.php'" >
-        <img  src="images/interestingmenu/back_btn.png">
+<div class="head">
+    <div class="title">注册</div>
+
+    <div class="backbtn" onclick="location.href='cookingdiary.php'">
+        <img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">
     </div>
 </div>
 <div class="content">
