@@ -30,4 +30,7 @@ include_once '../include/template.php';
     <div class="btn "onclick="location.href='settings.php'">
         <img src="images/personalpage/setting_btn.png">
     </div>
+    <div class="btn "onclick="location.href='login.php'">
+        <img src="images/personalpage/logout_btn.png">
+    </div>
 </div>

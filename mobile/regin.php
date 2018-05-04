@@ -23,7 +23,7 @@ include_once '../include/template.php';
         <input  class="password" type="text" name="password" minlength="2" maxlength='16'>
     </div>
 
-    <button class="regin-btn" type="submit">
-        <img src="images/loginpage/regin-2.png" />
-    </button>
+    <div class="regin-btn" >
+        <button type="submit" value="登录"></button>
+    </div>
 </form>
