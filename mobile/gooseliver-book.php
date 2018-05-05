@@ -11,7 +11,7 @@ include_once '../include/template.php';
 <title>红豆双皮奶</title>
 <div class="top" style="background-image: url(images/gooseliver/logo-img.png)">
     <div class="btn-title">
-        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='westernfood.php'">
+        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='westernfood-page.php'">
         <img src="images/gooseliver/logo-title.png" style="width:200px;float:right;">
     </div>
     <div class="btns">

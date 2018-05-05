@@ -1,12 +1,12 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/swiper.min.css}
-{css/dish-book.css}
-{js/all.js}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/swiper.min.css"); ?>
+<?php _includeCSS("css/dish-book.css"); ?>
+<?php _includeJS("js/all.js"); ?>
 <script src="js/swiper.min.js"></script>
 <title>Pizza</title>
 <div class="top" style="background-image: url(images/pizza/logo-img.png)">

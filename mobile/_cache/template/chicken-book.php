@@ -1,18 +1,18 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/swiper.min.css}
-{css/dish-book.css}
-{js/all.js}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/swiper.min.css"); ?>
+<?php _includeCSS("css/dish-book.css"); ?>
+<?php _includeJS("js/all.js"); ?>
 <script src="js/swiper.min.js"></script>
-<title>Pizza</title>
-<div class="top" style="background-image: url(images/pizza/logo-img.png)">
+<title>宫保鸡丁</title>
+<div class="top" style="background-image: url(images/chicken/logo-img.png)">
     <div class="btn-title">
-        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='fastfood-page.php'">
-        <img src="images/pizza/logo-title.png" style="width:200px;float:right;">
+        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='chinesefood-page.php'">
+        <img src="images/chicken/logo-title.png" style="width:200px;float:right;">
     </div>
     <div class="btns">
         <button class="photo" ><img src="images/dessert/camera.png" ></button>
@@ -27,39 +27,47 @@ include_once '../include/template.php';
         </ul>
     </div>
     <div class="ingredients">
-        <img src="images/pizza/pl.png">
+        <img src="images/chicken/pl.png">
     </div>
     <div class="steps">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-1.png">
+                    <img src="images/chicken/bz-1.png">
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-2.png">
+                    <img src="images/chicken/bz-2.png">
                 </div>
                <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-3.png">
+                    <img src="images/chicken/bz-3.png">
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-4.png">
+                    <img src="images/chicken/bz-4.png">
                 </div>
                  <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-5.png">
+                    <img src="images/chicken/bz-5.png">
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-6.png">
+                    <img src="images/chicken/bz-6.png">
                 </div>
                <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-7.png">
+                    <img src="images/chicken/bz-7.png">
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-8.png">
+                    <img src="images/chicken/bz-8.png">
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/pizza/bz-9.png">
+                    <img src="images/chicken/bz-9.png">
                 </div>
-                
+                <div class="swiper-slide"> 
+                    <img src="images/chicken/bz-10.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/chicken/bz-11.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/chicken/bz-12.png">
+                </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
