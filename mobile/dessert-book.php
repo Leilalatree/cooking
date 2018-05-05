@@ -62,6 +62,15 @@ include_once '../include/template.php';
                 <div class="swiper-slide"> 
                     <img src="images/dessert/bz10.png">
                 </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz11.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz12.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz13.png">
+                </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
