@@ -15,7 +15,7 @@
 </div>
 <div class="middle-list">
     <ul>
-        <?php for($i=0;$i<3;$i++){ ?>
+        <!--<?php for($i=0;$i<3;$i++){ ?>-->
         <li >
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </li>
-        <?php }?>
+       <!-- <?php }?>-->
     </ul>
 </div>
 <div class="new-diary">
