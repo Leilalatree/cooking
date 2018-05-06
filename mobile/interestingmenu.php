@@ -15,6 +15,7 @@ include_once '../include/template.php';
 		<img style="width: 70%;height: 70%;" src="images/index/personal_btn.png">
 	</div>
 </div>
+<div style="width: 100%;height: 9%;"></div>
 <div class="menubtn" onclick="location.href='chinesefood-page.php'">
 	<img src="images/interestingmenu/qwcp_zc.png" style="width: 100%;height: 100%;"/>
 </div>
