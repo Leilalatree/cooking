@@ -1,10 +1,10 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/cookingdiary.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/cookingdiary.css"); ?>
 <title>我的日记</title>
 <!--navigation-->
 <body style="overflow: hidden;">
