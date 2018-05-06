@@ -8,7 +8,8 @@ include_once '../include/template.php';
 <title>我的菜谱</title>
 <body style="height: 100%;">
 <div class="head">
-	<div class="title">我的菜谱</div>
+	<div class="title">我的菜谱
+</div>
 	<div class="backbtn" onclick="location.href='interestingmenu.php'" >
 		<img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">
 	</div>
