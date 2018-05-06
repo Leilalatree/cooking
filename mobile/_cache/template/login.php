@@ -7,7 +7,7 @@
 <?php _includeCSS("css/login.css"); ?>
 
 <title>登录</title>
-
+<body style="overflow: hidden;">
 <form name="login" action="../mobile/action/login-action.php" onsubmit="return enter()" required="required"
                             value="<?php echo isset($_COOKIE["wang"])?$_COOKIE["wang"]:"";?>" method="post">
     <div class="user-logo">
@@ -33,3 +33,4 @@
 
 
 
+</body>
