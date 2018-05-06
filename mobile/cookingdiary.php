@@ -15,7 +15,6 @@ include_once '../include/template.php';
 </div>
 <div class="middle-list">
     <ul>
-        <!--{for:$i=0;$i<3;$i++}-->
         <li >
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
@@ -23,21 +22,24 @@ include_once '../include/template.php';
             </div>
             <div class="content">
                 <span class="page-header" style="font-size: 17px;">养生鸡汤二三事</span>
-                <p class="section"style="text-indent: 2rem">aaaaaaaaaaaaaaaaaaaaaa</p>
+              <pre> <p class="section"style="text-indent: 2rem;text-overflow:ellipsis">aaaaaaaaaaaaaaaaaaaaaa   
+                顶顶顶顶</p></pre>
             </div>
             <div class="btn-section">
                 <div class="like" >
                     <img src="images/cookingdiary/likeimage.png">
+                    <p>200</p>
                 </div>
-                <div class="conments">
+                <div class="conments" style="margin-left: 5%;">
                     <img src="images/cookingdiary/messageimage.png">
+                    <p style="font-size:12px;margin-left: 37%;line-height: 16px;">20</p>
                 </div>
-                <div class="time">
+                <div class="time"style="margin-left: 5%;">
                     <img src="images/cookingdiary/dateimage.png">
+                    <p>2008</p>
                 </div>
             </div>
         </li>
-       <!-- {/for}-->
     </ul>
 </div>
 <div class="new-diary">
