@@ -59,6 +59,7 @@ include_once '../include/template.php';
         {/for}
     </ul>
 </div>
+<div class="blank" style="width: 100%;height: 49px;"></div>
 <div class="commenting" style="z-index: 100;">
     <input placeholder="发表评论"></input>
 </div>
