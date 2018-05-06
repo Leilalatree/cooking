@@ -1,10 +1,10 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/diary-detail.css}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/diary-detail.css"); ?>
 <title>日记详情</title>
 <!--navigation-->
 <div class="nav">
@@ -51,12 +51,12 @@ include_once '../include/template.php';
 </div>
 <div class="conments-section" style="width: 92%; margin: 0 4% 3% 4%;  ">
     <ul class="conments-section" style="width: 100%;" >
-        {for:$i=0;$i<3;$i++}
+        <?php for($i=0;$i<3;$i++){ ?>
         <li class="person">
             <p style="float: left;font-size: 13px;color: blue;font-weight: bold">Sherry_ry:&nbsp;&nbsp;</p>
             <p style="float: left;font-size: 13px;">非常优秀.</p>
         </li>
-        {/for}
+        <?php }?>
     </ul>
 </div>
 <div class="blank" style="width: 100%;height: 40px;"></div>
