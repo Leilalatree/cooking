@@ -6,6 +6,7 @@ include_once '../include/template.php';
 {css/style.css}
 {css/dessert.css}
 <title>甜品</title>
+<body style="height: 100%;">
 <div class="head">
 	<div class="title">甜品</div>
 	<div class="backbtn" onclick="location.href='interestingmenu.php'" >
@@ -33,3 +34,4 @@ include_once '../include/template.php';
 <div class="menubtn" onclick="location.href='dessert-book.php'">
 	<img src="images/menu/tp6.png" style="width: 100%;height: 100%;"/>
 </div>
+</body>
