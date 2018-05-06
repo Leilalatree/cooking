@@ -5,6 +5,8 @@
     color: #FFFFFF;
     line-height: 100%;
     margin: 0 auto;
+    position:fixed;
+    margin-top: 0px;
 }
 .title{
 	padding-top: 8%;
