@@ -15,7 +15,7 @@ include_once '../include/template.php';
 </div>
 <div class="middle-list">
     <ul>
-        {for:$i=0;$i<3;$i++}
+        <!--{for:$i=0;$i<3;$i++}-->
         <li >
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
@@ -37,7 +37,7 @@ include_once '../include/template.php';
                 </div>
             </div>
         </li>
-        {/for}
+       <!-- {/for}-->
     </ul>
 </div>
 <div class="new-diary">

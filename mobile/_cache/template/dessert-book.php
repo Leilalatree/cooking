@@ -1,17 +1,17 @@
 <?php
-include_once '../include/template.php';
+
 
 ?>
-{viewport375}
-{css/style.css}
-{css/swiper.min.css}
-{css/dish-book.css}
-{js/all.js}
+<meta name='viewport' content='width=375,user-scalable=no'>
+<?php _includeCSS("css/style.css"); ?>
+<?php _includeCSS("css/swiper.min.css"); ?>
+<?php _includeCSS("css/dish-book.css"); ?>
+<?php _includeJS("js/all.js"); ?>
 <script src="js/swiper.min.js"></script>
 <title>芒果蛋糕</title>
 <div class="top">
     <div class="btn-title">
-        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='dessert.php'">
+        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='dessert-page.php'">
         <img src="images/dessert/logo-title.png" style="width:200px;float:right;">
     </div>
     <div class="btns">
@@ -61,6 +61,15 @@ include_once '../include/template.php';
                 </div>
                 <div class="swiper-slide"> 
                     <img src="images/dessert/bz10.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz11.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz12.png">
+                </div>
+                <div class="swiper-slide"> 
+                    <img src="images/dessert/bz13.png">
                 </div>
             </div>
             <!-- Add Pagination -->
