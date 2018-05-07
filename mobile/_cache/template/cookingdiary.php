@@ -41,7 +41,7 @@
                 </div>
             </div>
         </li>
-                <li >
+                <li onclick="location.href='diary-detail2.php'">
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
                 <span>Sherry_ry</span>

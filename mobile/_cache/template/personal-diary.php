@@ -16,7 +16,7 @@
 </div>
 <div class="middle-list">
     <ul>
-        <li onclick="location.href='diary-detail.php'">
+        <li onclick="location.href='my-diarybook1.php'">
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
                 <span>Sherry_ry</span>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </li>
-                <li >
+                <li onclick="location.href='my-diarybook2.php'">
             <div class="person">
                 <img src="images/personalpage/profilephoto.png">
                 <span>Sherry_ry</span>
