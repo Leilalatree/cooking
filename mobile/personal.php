@@ -8,7 +8,7 @@ include_once '../include/template.php';
 {css/style.css}
 {css/personal.css}
 <div class="top">
-    <div class="backbtn" onclick="location.href='index.php'"></div>
+    <div class="backbtn" onclick="goback()"></div>
     <div class="head">
         <img src="images/personalpage/profilephoto.png">
         <span class="nickname"><b>Sherry_ry</b></span><br>
@@ -24,7 +24,7 @@ include_once '../include/template.php';
         <img src="images/personalpage/mymenu_btn.png">
     </div>
         
-    <div class="btn "onclick="location.href='personal-diary.php'">
+    <div class="btn "onclick="location.href='personal-interests.php'">
         <img src="images/personalpage/cookingdiary_btn.png">
     </div>
     <div class="btn "onclick="location.href='settings.php'">
@@ -34,3 +34,8 @@ include_once '../include/template.php';
         <img src="images/personalpage/logout_btn.png">
     </div>
 </div>
+<script type="text/javascript">  
+    function goback() {  
+        window.history.go(-1);  
+    }  
+</script> 

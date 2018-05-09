@@ -8,14 +8,14 @@ include_once '../include/template.php';
 <title>日记详情</title>
 <!--navigation-->
 <div class="nav">
-    <div class="web-title">Sherry_ry</div>
+    <div class="web-title">Bakugou</div>
     <div class="backbtn" onclick="location.href='cookingdiary.php'" >
         <img  src="images/interestingmenu/back_btn.png">
     </div>
 </div>
-<div class="top">
-    <img src="images/personalpage/profilephoto.png">
-    <p> Sherry_ry</p>
+<div class="top" onclick="location.href='other.php'">
+    <img src="images/personalpage/profilephoto2.png">
+    <p> Bakugou</p>
 </div>
 
 <div class="article">
@@ -37,7 +37,7 @@ include_once '../include/template.php';
 <div class="btn-section">
     <div class="like" >
         <img src="images/cookingdiary/likeimage.png">
-        <p>200</p>
+        <p>101</p>
     </div>
     <div class="conments" style="margin-left: 5%;">
         <img src="images/cookingdiary/messageimage.png">
@@ -45,14 +45,14 @@ include_once '../include/template.php';
     </div>
     <div class="time"style="margin-left: 5%;">
         <img src="images/cookingdiary/dateimage.png">
-        <p>2008</p>
+        <p>2018</p>
     </div>
 </div>
 <div class="conments-section" style="width: 92%; margin: 0 4% 3% 4%;  ">
     <ul class="conments-section" style="width: 100%;" >
         {for:$i=0;$i<3;$i++}
         <li class="person">
-            <p style="float: left;font-size: 13px;color: blue;font-weight: bold">Sherry_ry:&nbsp;&nbsp;</p>
+            <p style="float: left;font-size: 13px;color: blue;font-weight: bold" onclick="location.href='personal.php'">Sherry_ry:&nbsp;&nbsp;</p>
             <p style="float: left;font-size: 13px;">非常优秀.</p>
         </li>
         {/for}

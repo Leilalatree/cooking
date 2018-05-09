@@ -13,7 +13,7 @@
         <img  src="images/interestingmenu/back_btn.png">
     </div>
 </div>
-<div class="top">
+<div class="top"  onclick="location.href='personal.php'">
     <img src="images/personalpage/profilephoto.png">
     <p> Sherry_ry</p>
 </div>
@@ -41,7 +41,7 @@
 <div class="btn-section">
     <div class="like" >
         <img src="images/cookingdiary/likeimage.png">
-        <p>200</p>
+        <p>99</p>
     </div>
     <div class="conments" style="margin-left: 5%;">
         <img src="images/cookingdiary/messageimage.png">
@@ -49,14 +49,14 @@
     </div>
     <div class="time"style="margin-left: 5%;">
         <img src="images/cookingdiary/dateimage.png">
-        <p>2008</p>
+        <p>2018</p>
     </div>
 </div>
 <div class="conments-section" style="width: 92%; margin: 0 4% 3% 4%;  ">
     <ul class="conments-section" style="width: 100%;" >
         <?php for($i=0;$i<3;$i++){ ?>
         <li class="person">
-            <p style="float: left;font-size: 13px;color: blue;font-weight: bold">Sherry_ry:&nbsp;&nbsp;</p>
+            <p style="float: left;font-size: 13px;color: blue;font-weight: bold" onclick="location.href='other.php'">Bakugou:&nbsp;&nbsp;</p>
             <p style="float: left;font-size: 13px;">非常优秀.</p>
         </li>
         <?php }?>
@@ -66,3 +66,12 @@
 <div class="commenting" style="z-index: 100;">
     <input placeholder="发表评论"></input>
 </div>
+
+<script>
+	function backForwardListen(){  
+    //performance.navigation.type=2表示当前页面行为是history.back()或history.forward()  
+    if(commonReload && performance.navigation.type == 2) {  
+        reloadDeal(window.location.href);  
+    }  
+} 
+</script>

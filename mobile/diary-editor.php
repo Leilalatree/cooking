@@ -8,7 +8,7 @@ include_once '../include/template.php';
 <title>编辑日记</title>
 <!--navigation-->
 <div class="head">
-    <div class="title">注册</div>
+    <div class="title">编辑</div>
 
     <div class="backbtn" onclick="location.href='cookingdiary.php'">
         <img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">

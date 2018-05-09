@@ -18,7 +18,7 @@ include_once '../include/template.php';
     <ul>
         <li onclick="location.href='diary-detail.php'">
             <div class="person">
-                <img src="images/personalpage/profilephoto.png">
+                <img src="images/personalpage/profilephoto.png"  onclick="location.href='personal.php'">
                 <span>Sherry_ry</span>
             </div>
             <div class="content" style="word-break: break-all;word-wrap: break-word;">
@@ -29,22 +29,22 @@ include_once '../include/template.php';
             <div class="btn-section">
                 <div class="like" >
                     <img src="images/cookingdiary/likeimage.png">
-                    <p>200</p>
+                    <p>99</p>
                 </div>
                 <div class="conments" style="margin-left: 5%;">
                     <img src="images/cookingdiary/messageimage.png">
-                    <p style="font-size:12px;margin-left: 37%;line-height: 16px;">20</p>
+                    <p style="font-size:12px;margin-left: 37%;line-height: 16px;">3</p>
                 </div>
                 <div class="time"style="margin-left: 5%;">
                     <img src="images/cookingdiary/dateimage.png">
-                    <p>2008</p>
+                    <p>2018</p>
                 </div>
             </div>
         </li>
                 <li onclick="location.href='diary-detail2.php'">
             <div class="person">
-                <img src="images/personalpage/profilephoto.png">
-                <span>Sherry_ry</span>
+                <img src="images/personalpage/profilephoto2.png">
+                <span>Bakugou</span>
             </div>
             <div class="content">
                 <span class="page-header" style="font-size: 17px;">肠道排毒</span>
@@ -54,15 +54,15 @@ include_once '../include/template.php';
             <div class="btn-section">
                 <div class="like" >
                     <img src="images/cookingdiary/likeimage.png">
-                    <p>200</p>
+                    <p>101</p>
                 </div>
                 <div class="conments" style="margin-left: 5%;">
                     <img src="images/cookingdiary/messageimage.png">
-                    <p style="font-size:12px;margin-left: 37%;line-height: 16px;">20</p>
+                    <p style="font-size:12px;margin-left: 37%;line-height: 16px;">3</p>
                 </div>
                 <div class="time"style="margin-left: 5%;">
                     <img src="images/cookingdiary/dateimage.png">
-                    <p>2008</p>
+                    <p>2018</p>
                 </div>
             </div>
         </li>

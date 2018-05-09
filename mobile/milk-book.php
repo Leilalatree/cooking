@@ -11,7 +11,7 @@ include_once '../include/template.php';
 <title>红豆双皮奶</title>
 <div class="top" style="background-image: url(images/milk/logo-img.png)">
     <div class="btn-title">
-        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='dessert-page.php'">
+        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="goback()">
         <img src="images/milk/logo-title.png" style="width:200px;float:right;">
     </div>
     <div class="btns">
@@ -93,4 +93,9 @@ include_once '../include/template.php';
         prevEl: '.swiper-button-prev',
       },
     });
+
+    function goback() {  
+        window.history.go(-1);  
+    }  
+
   </script>
