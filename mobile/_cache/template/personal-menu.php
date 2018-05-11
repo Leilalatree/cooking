@@ -13,9 +13,7 @@
 	<div class="backbtn" onclick="location.href='personal.php'" >
 		<img style="width: 70%;height: 70%;" src="images/interestingmenu/back_btn.png">
 	</div>
-	<div class="rightbtn" onclick="location.href='personal.php'">
-		<img style="width: 70%;height: 70%;" src="images/index/personal_btn.png">
-	</div>
+
 </div>
 <div style="width: 100%;height: 9%;background-color: white;">
 </div>

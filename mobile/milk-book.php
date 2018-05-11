@@ -11,7 +11,7 @@ include_once '../include/template.php';
 <title>红豆双皮奶</title>
 <div class="top" style="background-image: url(images/milk/logo-img.png)">
     <div class="btn-title">
-        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="location.href='dessert-page.php'">
+        <img src="images/dessert/fh.png" style="width: 15px;float: left;" onclick="goback()">
         <img src="images/milk/logo-title.png" style="width:200px;float:right;">
     </div>
     <div class="btns">
@@ -33,28 +33,52 @@ include_once '../include/template.php';
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
-                    <img src="images/milk/bz-1.png">
+                    <img src="images/milk/bz-1.png" onclick="playPause()">
+                    	<audio id="audio" width="420" >
+                    		<source src="video/spn01.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/milk/bz-2.png">
+                    <img src="images/milk/bz-2.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn03.mp3" type="audio/mp3" />
+                    		</audio>                                  
                 </div>
                <div class="swiper-slide"> 
-                    <img src="images/milk/bz-3.png">
+                    <img src="images/milk/bz-3.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn03.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/milk/bz-4.png">
+                    <img src="images/milk/bz-4.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn04.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                  <div class="swiper-slide"> 
-                    <img src="images/milk/bz-5.png">
+                    <img src="images/milk/bz-5.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn05.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/milk/bz-6.png">
+                    <img src="images/milk/bz-6.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn06.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                <div class="swiper-slide"> 
-                    <img src="images/milk/bz-7.png">
+                    <img src="images/milk/bz-7.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn07.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
                 <div class="swiper-slide"> 
-                    <img src="images/milk/bz-8.png">
+                    <img src="images/milk/bz-8.png" onclick="playPause()>                    
+                    		<audio id="audio" width="420" >
+                    		<source src="video/spn08.mp3" type="audio/mp3" />
+                    		</audio>
                 </div>
  
             </div>
@@ -93,4 +117,19 @@ include_once '../include/template.php';
         prevEl: '.swiper-button-prev',
       },
     });
+
+    function goback() {  
+        window.history.go(-1);  
+    }  
+    
+    var myAudio = document.getElementById('audio');
+    function playPause(){
+        if(myAudio.paused){
+            myAudio.play();
+        }else{
+            myAudio.pause();
+        }
+    }
+
+
   </script>
