@@ -10,7 +10,7 @@
 <body style="overflow: hidden;">
 <div class="top">
     <div class="title">我的喜欢</div>
-    <div class="backbtn" onclick="location.href='index.php'" >
+    <div class="backbtn" onclick="location.href='personal.php'" >
         <img  src="images/interestingmenu/back_btn.png">
     </div>
 </div>
@@ -44,7 +44,5 @@
         </li>
     </ul>
 </div>
-<div class="new-diary">
-    <button class="add-diary"  onclick="location.href='diary-editor.php'"></button>
-</div>
+
 </body>

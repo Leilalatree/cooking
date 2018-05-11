@@ -18,7 +18,7 @@
 <div class="head-img">
     <div class="display-pic" onclick="changeImg()">
         <div class="head">
-            <img src="">
+            <img src="images/personalpage/profilephoto.png">
         </div>
         <div class="forwordbtn">
             <img  src="images/next.png">
